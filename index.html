@@ -1,0 +1,171 @@
+
+<!-- Brisa Tielly Almeida da Silva e Sergio Matheus Araújo Silva -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inflação Mensal Brasil 2024 - IPCA e IGP-M</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Inflação Mensal Brasil 2024 - IPCA e IGP-M</h1>
+        
+        <svg class="chart" width="850" height="500" viewBox="0 0 850 500">
+       
+            <!-- Título dos Eixos -->
+            <text class="axis-title x-axis-title" x="425" y="480">Mês</text>
+            <text class="axis-title y-axis-title" x="15" y="250" transform="rotate(-90, 15, 250)">Variação (%)</text>
+            
+            <!-- Linhas de Grade Horizontais -->
+            <line class="grid-line" x1="50" y1="150" x2="800" y2="150" />
+            <line class="grid-line" x1="50" y1="200" x2="800" y2="200" />
+            <line class="grid-line" x1="50" y1="250" x2="800" y2="250" />
+            <line class="grid-line" x1="50" y1="300" x2="800" y2="300" />
+            <!-- <line class="grid-line" x1="50" y1="350" x2="800" y2="350" /> -->
+            <line class="grid-line" x1="50" y1="400" x2="800" y2="400" />
+            
+            <!-- Valores do Eixo Y -->
+            <text class="axis-value" x="45" y="350">0.0</text>
+            <text class="axis-value" x="45" y="300">0.5</text>
+            <text class="axis-value" x="45" y="250">1.0</text>
+            <text class="axis-value" x="45" y="200">1.5</text>
+            <text class="axis-value" x="45" y="150">2.0</text>
+            <text class="axis-value" x="45" y="400">-0.5</text>
+            
+            <!-- Meses no Eixo X -->
+            <text class="month-label" x="90" y="450">Jan</text>
+            <text class="month-label" x="150" y="450">Fev</text>
+            <text class="month-label" x="210" y="450">Mar</text>
+            <text class="month-label" x="270" y="450">Abr</text>
+            <text class="month-label" x="330" y="450">Mai</text>
+            <text class="month-label" x="390" y="450">Jun</text>
+            <text class="month-label" x="450" y="450">Jul</text>
+            <text class="month-label" x="510" y="450">Ago</text>
+            <text class="month-label" x="570" y="450">Set</text>
+            <text class="month-label" x="630" y="450">Out</text>
+            <text class="month-label" x="690" y="450">Nov</text>
+            <text class="month-label" x="750" y="450">Dez</text>
+            
+            <!-- IPCA Barras e valores -->
+            <!-- Janeiro: 0.42 -->
+            <rect class="bar ipca-bar" x="75" y="308" width="15" height="42" />
+            <text class="bar-value" x="82.5" y="300">0.42</text>
+            
+            <!-- Fevereiro: 0.83 -->
+            <rect class="bar ipca-bar" x="135" y="267" width="15" height="83" />
+            <text class="bar-value" x="142.5" y="259">0.83</text>
+            
+            <!-- Março: 0.16 -->
+            <rect class="bar ipca-bar" x="195" y="334" width="15" height="16" />
+            <text class="bar-value" x="202.5" y="326">0.16</text>
+            
+            <!-- Abril: 0.38 -->
+            <rect class="bar ipca-bar" x="255" y="312" width="15" height="38" />
+            <text class="bar-value" x="262.5" y="304">0.38</text>
+            
+            <!-- Maio: 0.46 -->
+            <rect class="bar ipca-bar" x="315" y="304" width="15" height="46" />
+            <text class="bar-value" x="322.5" y="296">0.46</text>
+            
+            <!-- Junho: 0.21 -->
+            <rect class="bar ipca-bar" x="375" y="329" width="15" height="21" />
+            <text class="bar-value" x="382.5" y="321">0.21</text>
+            
+            <!-- Julho: 0.38 -->
+            <rect class="bar ipca-bar" x="435" y="312" width="15" height="38" />
+            <text class="bar-value" x="442.5" y="304">0.38</text>
+            
+            <!-- Agosto: -0.02 -->
+            <rect class="bar ipca-bar" x="495" y="350" width="15" height="2" />
+            <text class="bar-value negative-value" x="502.5" y="360">-0.02</text>
+            
+            <!-- Setembro: 0.44 -->
+            <rect class="bar ipca-bar" x="555" y="306" width="15" height="44" />
+            <text class="bar-value" x="562.5" y="298">0.44</text>
+            
+            <!-- Outubro: 0.56 -->
+            <rect class="bar ipca-bar" x="615" y="294" width="15" height="56" />
+            <text class="bar-value" x="622.5" y="286">0.56</text>
+            
+            <!-- Novembro: 0.39 -->
+            <rect class="bar ipca-bar" x="675" y="311" width="15" height="39" />
+            <text class="bar-value" x="682.5" y="303">0.39</text>
+            
+            <!-- Dezembro: 0.52 -->
+            <rect class="bar ipca-bar" x="735" y="298" width="15" height="52" />
+            <text class="bar-value" x="742.5" y="290">0.52</text>
+            
+            <!-- IGP-M Barras e valores -->
+            <!-- Janeiro: 0.07 -->
+            <rect class="bar igpm-bar" x="95" y="343" width="15" height="7" />
+            <text class="bar-value" x="102.5" y="335">0.07</text>
+            
+            <!-- Fevereiro: -0.52 -->
+            <rect class="bar igpm-bar" x="155" y="350" width="15" height="52" />
+            <text class="bar-value negative-value" x="162.5" y="410">-0.52</text>
+            
+            <!-- Março: -0.47 -->
+            <rect class="bar igpm-bar" x="215" y="350" width="15" height="47" />
+            <text class="bar-value negative-value" x="222.5" y="405">-0.47</text>
+            
+            <!-- Abril: 0.31 -->
+            <rect class="bar igpm-bar" x="275" y="319" width="15" height="31" />
+            <text class="bar-value" x="282.5" y="311">0.31</text>
+            
+            <!-- Maio: 0.89 -->
+            <rect class="bar igpm-bar" x="335" y="261" width="15" height="89" />
+            <text class="bar-value" x="342.5" y="253">0.89</text>
+            
+            <!-- Junho: 0.81 -->
+            <rect class="bar igpm-bar" x="395" y="269" width="15" height="81" />
+            <text class="bar-value" x="402.5" y="261">0.81</text>
+            
+            <!-- Julho: 0.61 -->
+            <rect class="bar igpm-bar" x="455" y="289" width="15" height="61" />
+            <text class="bar-value" x="462.5" y="281">0.61</text>
+            
+            <!-- Agosto: 0.29 -->
+            <rect class="bar igpm-bar" x="515" y="321" width="15" height="29" />
+            <text class="bar-value" x="522.5" y="313">0.29</text>
+            
+            <!-- Setembro: 0.62 -->
+            <rect class="bar igpm-bar" x="575" y="288" width="15" height="62" />
+            <text class="bar-value" x="582.5" y="280">0.62</text>
+            
+            <!-- Outubro: 1.52 -->
+            <rect class="bar igpm-bar" x="635" y="198" width="15" height="152" />
+            <text class="bar-value" x="642.5" y="190">1.52</text>
+            
+            <!-- Novembro: 1.30 -->
+            <rect class="bar igpm-bar" x="695" y="220" width="15" height="130" />
+            <text class="bar-value" x="702.5" y="212">1.30</text>
+            
+            <!-- Dezembro: 0.94 -->
+            <rect class="bar igpm-bar" x="755" y="256" width="15" height="94" />
+            <text class="bar-value" x="762.5" y="248">0.94</text>
+            
+            <!-- Título do Gráfico -->
+            <text class="chart-title" x="425" y="30">Variação Mensal da Inflação - IPCA x IGP-M 2024</text>
+            
+                 <!-- Eixos -->
+                 <line class="axis vertical-axis" x1="50" y1="130" x2="50" y2="430" />
+                 <line class="axis horizontal-axis" x1="50" y1="350" x2="800" y2="350" />
+                 
+        </svg>
+        
+        <div class="legenda">
+            <div class="legenda-item">
+                <div class="legenda-cor ipca-cor"></div>
+                <span>IPCA</span>
+            </div>
+            <div class="legenda-item">
+                <div class="legenda-cor igpm-cor"></div>
+                <span>IGP-M</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
