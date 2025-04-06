@@ -35,11 +35,18 @@ Os dados apresentados são da inflação mensal do Brasil em 2024 para os índic
 
 ### Escala do Gráfico
 
+A altura das barras é determinada por um fator de escala de **100 unidades SVG por ponto percentual** em relação a essa linha zero.
+
+- **Valores Positivos:** A altura da barra é calculada multiplicando o valor percentual por 100, e a barra se estende para cima a partir da linha zero.
+- **Valores Negativos:** A altura da barra (positiva) é calculada multiplicando o valor absoluto do percentual por 100, e a barra se estende para baixo a partir da linha zero.
+
 A escala vertical do gráfico foi definida para acomodar todos os valores dos dois índices, indo de -0.5% até 2.0%, com marcações a cada 0.5 pontos percentuais. Esta escala foi escolhida porque:
 
 1. **Amplitude**: Abrange confortavelmente o menor valor (-0.52% do IGP-M em fevereiro) e o maior valor (1.52% do IGP-M em outubro).
 2. **Legibilidade**: As marcações a cada 0.5 pontos permitem uma leitura precisa sem sobrecarregar o gráfico.
 3. **Comparabilidade**: Facilita a comparação visual entre os valores dos dois índices.
+
+
 
 ### Escolhas de Design
 
@@ -60,6 +67,7 @@ A escala vertical do gráfico foi definida para acomodar todos os valores dos do
 
 5. **Layout Modularizado**:
    - Separação completa entre estrutura (HTML), apresentação (CSS) e dados para facilitar manutenção e atualizações.
+
 
 
 ## 🛠️ Tecnologias Utilizadas
